@@ -83,6 +83,19 @@ abstract class AbstractInput
         return $this;
     }
 
+    /**
+     * @param array<\ProgPhil1337\Forms\Validation\Validator> $validators
+     * @return $this
+     */
+    public function addValidators(array $validators): self
+    {
+        foreach ($validators as $validator) {
+            $this->addValidator($validator);
+        }
+
+        return $this;
+    }
+
     public function validate(): array
     {
         $results = [];

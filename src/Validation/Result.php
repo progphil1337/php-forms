@@ -41,8 +41,34 @@ final class Result
         return $this->errorMessages[$input->name] ?? [];
     }
 
+    /**
+     * @return array<string,array<string,string|\ProgPhil1337\Forms\Validation\Validator>>
+     */
     public function getErrorMessages(): array
     {
         return $this->errorMessages;
+    }
+
+    public function getAsJSON(): string
+    {
+        $isValid = $this->isValid();
+
+        $data = [
+            'success' => $isValid
+        ];
+
+        if (!$isValid) {
+            $data['error'] = [];
+            foreach ($this->errorMessages as $name => $info) {
+                $data['error'][$name] = array_map(fn(array $v) => $v['message'], $info);
+            }
+        }
+
+        return json_encode($data);
+    }
+
+    public function __toString(): string
+    {
+        return $this->getAsJSON();
     }
 }

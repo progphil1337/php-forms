@@ -7,7 +7,7 @@ namespace ProgPhil1337\Forms\Validation\Validator;
 use ProgPhil1337\Forms\Validation\Validator;
 
 /**
- * DefaultSelectValidValue
+ * InArray
  *
  * @package ProgPhil1337\Forms\Validation\Validator
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
