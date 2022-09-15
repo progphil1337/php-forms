@@ -33,7 +33,7 @@ class ExampleForm extends Form
 
     public function __construct()
     {
-        parent::__construct('example-form', Method::POST);
+        parent::__construct('example-form', RequestMethod::POST);
     }
 
     protected function build(): void
@@ -79,7 +79,7 @@ $form->setDefaultValues([
 
 $errorMessages = [];
 
-if ($request->method === $form->method) {
+if ($request->method->value === $form->method->value) {
     $result = $form->validate($request->body);
     $valid = $result->isValid();
 

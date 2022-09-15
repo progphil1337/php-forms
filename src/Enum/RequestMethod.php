@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Progphil1337\PhpForms\Enum;
+namespace ProgPhil1337\PhpForms\Enum;
 
 /**
  * RequestMethod
