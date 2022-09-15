@@ -1,0 +1,22 @@
+{
+    "name": "progphil1337/php-forms",
+    "description": "Create forms using PHP",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "progphil1337/php-html": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ProgPhil1337\\PhpForms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philipp Lohmann",
+            "email": "lohmann.philipp@gmx.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}
