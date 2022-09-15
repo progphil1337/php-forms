@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Element;
+namespace ProgPhil1337\Forms\Element;
 
-use ProgPhil1337\PhpForms\AbstractInput;
-use ProgPhil1337\PhpForms\Enum\InputType;
-use ProgPhil1337\PhpForms\Validation\Validator\InArray;
-use ProgPhil1337\PhpHtml\Attribute;
-use ProgPhil1337\PhpHtml\Element;
+use ProgPhil1337\Forms\AbstractInput;
+use ProgPhil1337\Forms\Enum\InputType;
+use ProgPhil1337\Forms\Validation\Validator\InArray;
+use ProgPhil1337\HTML\Attribute;
+use ProgPhil1337\HTML\Element;
 
 /**
  * Radio
  *
- * @package ProgPhil1337\PhpForms\Element
+ * @package ProgPhil1337\Forms\Element
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 class Radio extends AbstractInput

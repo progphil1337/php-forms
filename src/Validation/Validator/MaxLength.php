@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Validation\Validator;
+namespace ProgPhil1337\Forms\Validation\Validator;
 
-use ProgPhil1337\PhpForms\Validation\Validator;
+use ProgPhil1337\Forms\Validation\Validator;
 
 /**
  * MaxLength
  *
- * @package ProgPhil1337\PhpForms\Validation\Validator
+ * @package ProgPhil1337\Forms\Validation\Validator
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 class MaxLength extends Validator

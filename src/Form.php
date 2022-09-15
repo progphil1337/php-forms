@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms;
+namespace ProgPhil1337\Forms;
 
-use Progphil1337\PhpForms\Enum\RequestMethod;
-use ProgPhil1337\PhpHtml\Attribute;
-use ProgPhil1337\PhpHtml\Element;
-use ProgPhil1337\PhpForms\Element\Input;
-use ProgPhil1337\PhpForms\Enum\InputType;
-use ProgPhil1337\PhpForms\Validation\Result;
+use Progphil1337\Forms\Enum\RequestMethod;
+use ProgPhil1337\HTML\Attribute;
+use ProgPhil1337\HTML\Element;
+use ProgPhil1337\Forms\Element\Input;
+use ProgPhil1337\Forms\Enum\InputType;
+use ProgPhil1337\Forms\Validation\Result;
 
 /**
  * Form
  *
- * @package ProgPhil1337\PhpForms
+ * @package ProgPhil1337\Forms
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 abstract class Form
@@ -25,12 +25,12 @@ abstract class Form
     private bool $built = false;
     private ?Result $validationResult = null;
 
-    /** @var array<\ProgPhil1337\PhpForms\AbstractInput> */
+    /** @var array<\ProgPhil1337\Forms\AbstractInput> */
     private array $inputs = [];
 
     /**
      * @param string $name
-     * @param \Progphil1337\PhpForms\Enum\RequestMethod $method
+     * @param \Progphil1337\Forms\Enum\RequestMethod $method
      * @param string|null $action
      */
     public function __construct(string $name, public readonly RequestMethod $method, string $action = null)
@@ -76,7 +76,7 @@ abstract class Form
     abstract protected function build(): void;
 
     /**
-     * @param \ProgPhil1337\PhpForms\AbstractInput $input
+     * @param \ProgPhil1337\Forms\AbstractInput $input
      * @return $this
      */
     public function add(AbstractInput $input): self
@@ -92,7 +92,7 @@ abstract class Form
 
     /**
      * @param string $name
-     * @return \ProgPhil1337\PhpForms\AbstractInput|null
+     * @return \ProgPhil1337\Forms\AbstractInput|null
      */
     public function get(string $name): ?AbstractInput
     {
@@ -111,7 +111,7 @@ abstract class Form
     /**
      * @param array<string,mixed> $body
      * @param bool $fill
-     * @return \ProgPhil1337\PhpForms\Validation\Result
+     * @return \ProgPhil1337\Forms\Validation\Result
      */
     public function validate(array $body, bool $fill = true): Result
     {

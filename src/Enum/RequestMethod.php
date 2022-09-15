@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Enum;
+namespace ProgPhil1337\Forms\Enum;
 
 /**
  * RequestMethod
  *
- * @package Progphil1337\PhpForms\Enum
+ * @package ProgPhil1337\Forms\Enum
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 enum RequestMethod: string

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Enum;
+namespace ProgPhil1337\Forms\Enum;
 
-use ProgPhil1337\PhpForms\Validation\Validator\Mail;
+use ProgPhil1337\Forms\Validation\Validator\Mail;
 
 /**
  * InputType
  *
- * @package ProgPhil1337\PhpForms\Enum
+ * @package ProgPhil1337\Forms\Enum
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 enum InputType: string

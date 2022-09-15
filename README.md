@@ -10,23 +10,24 @@ $ composer require progphil1337/php-forms
 
 ## Compatibility
 
-`ProgPhil1337\PhpForms` requires PHP 8.1 (or better).
+`ProgPhil1337\Forms` requires PHP 8.1 (or better).
 
 ## Usage
 
 
 ### Basic example
 ExampleForm.php
+
 ```php
-use ProgPhil1337\PhpForms\Element\Input;
-use ProgPhil1337\PhpForms\Element\Radio;
-use ProgPhil1337\PhpForms\Element\Select;
-use ProgPhil1337\PhpForms\Enum\InputType;
-use ProgPhil1337\PhpForms\Form;
-use ProgPhil1337\PhpForms\Validation\Validator\MaxLength;
-use ProgPhil1337\PhpForms\Validation\Validator\MinLength;
-use ProgPhil1337\PhpForms\Validation\Validator\IsRequired;
-use ProgPhil1337\PhpForms\Enum\RequestMethod;
+use ProgPhil1337\Forms\Element\Input;
+use ProgPhil1337\Forms\Element\Radio;
+use ProgPhil1337\Forms\Element\Select;
+use ProgPhil1337\Forms\Enum\InputType;
+use ProgPhil1337\Forms\Form;
+use ProgPhil1337\Forms\Validation\Validator\MaxLength;
+use ProgPhil1337\Forms\Validation\Validator\MinLength;
+use ProgPhil1337\Forms\Validation\Validator\IsRequired;
+use ProgPhil1337\Forms\Enum\RequestMethod;
 
 class ExampleForm extends Form
 {

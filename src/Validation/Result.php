@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Validation;
+namespace ProgPhil1337\Forms\Validation;
 
-use ProgPhil1337\PhpForms\AbstractInput;
+use ProgPhil1337\Forms\AbstractInput;
 
 /**
  * Result
  *
- * @package ProgPhil1337\PhpForms\Validation
+ * @package ProgPhil1337\Forms\Validation
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 final class Result
 {
-    /** @var array<AbstractInput, array<\ProgPhil1337\PhpForms\Validation\Validator> */
+    /** @var array<AbstractInput, array<\ProgPhil1337\Forms\Validation\Validator> */
     private array $errorMessages = [];
 
     public function addErrorMessage(AbstractInput $input, Validator $validator, string $message): self

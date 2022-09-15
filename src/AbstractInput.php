@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms;
+namespace ProgPhil1337\Forms;
 
-use ProgPhil1337\PhpForms\Element\Input;
-use ProgPhil1337\PhpForms\Enum\InputType;
-use ProgPhil1337\PhpForms\Validation\Validator;
-use ProgPhil1337\PhpHtml\Attribute;
-use ProgPhil1337\PhpHtml\Element;
+use ProgPhil1337\Forms\Element\Input;
+use ProgPhil1337\Forms\Enum\InputType;
+use ProgPhil1337\Forms\Validation\Validator;
+use ProgPhil1337\HTML\Attribute;
+use ProgPhil1337\HTML\Element;
 
 /**
  * AbstractInput
  *
- * @package ProgPhil1337\PhpForms
+ * @package ProgPhil1337\Forms
  * @author Philipp Lohmann <lohmann.philipp@gmx.net>
  */
 abstract class AbstractInput
@@ -31,7 +31,7 @@ abstract class AbstractInput
 
     /**
      * @param string $name
-     * @param \ProgPhil1337\PhpForms\Enum\InputType $type
+     * @param \ProgPhil1337\Forms\Enum\InputType $type
      * @param string|null $label
      */
     public function __construct(
@@ -69,7 +69,7 @@ abstract class AbstractInput
     }
 
     /**
-     * @param \ProgPhil1337\PhpForms\Validation\Validator $validator
+     * @param \ProgPhil1337\Forms\Validation\Validator $validator
      * @return $this
      */
     public function addValidator(Validator $validator): self

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ProgPhil1337\PhpForms\Validation;
+namespace ProgPhil1337\Forms\Validation;
 
-use ProgPhil1337\PhpHtml\Attribute;
+use ProgPhil1337\HTML\Attribute;
 
 /**
  * Validator
